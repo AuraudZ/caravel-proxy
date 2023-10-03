@@ -12,4 +12,5 @@ RUN pnpm i
 
 ENV NODE_ENV production
 EXPOSE 9000
+RUN ls
 CMD [ "node", "index.js" ]
