@@ -6,6 +6,7 @@ RUN mkdir -p node_modules
 RUN chown -R $user:$user *
 RUN chown -R $user:$user node_modules
 USER $user
+RUN wget -qO- https://get.pnpm.io/install.sh | sh -
 
 RUN pnpm i
 
