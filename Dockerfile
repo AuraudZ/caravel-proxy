@@ -10,7 +10,8 @@ RUN npm install -g pnpm
 
 RUN pnpm i
 
+COPY . .
+
 ENV NODE_ENV production
 EXPOSE 9000
-RUN ls
-# CMD [ "node", "src/index.js" ]
+CMD [ "node", "src/index.js" ]
